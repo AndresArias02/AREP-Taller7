@@ -48,3 +48,4 @@ nb-configuration.xml
 # Ignore Maven Wrapper scripts
 mvnw
 mvnw.cmd
+.mvn
