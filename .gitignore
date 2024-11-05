@@ -49,3 +49,6 @@ nb-configuration.xml
 mvnw
 mvnw.cmd
 .mvn
+
+# Docker
+.dockerignore
