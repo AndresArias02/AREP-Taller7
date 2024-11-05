@@ -4,7 +4,6 @@ import arep.edu.eci.dtos.TokenDto;
 import arep.edu.eci.models.User;
 import io.smallrye.jwt.build.Jwt;
 import jakarta.inject.Singleton;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;

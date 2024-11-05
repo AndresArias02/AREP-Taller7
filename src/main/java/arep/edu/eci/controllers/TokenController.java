@@ -13,6 +13,11 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
+/**
+ * TokenController class
+ * This class is responsible for handling the token related operations
+ * @author Andres Felipe
+ */
 @Path("/security")
 public class TokenController {
 

@@ -2,7 +2,6 @@ package arep.edu.eci.services;
 
 import arep.edu.eci.models.Post;
 import jakarta.enterprise.context.ApplicationScoped;
-
 import java.util.List;
 /**
  * PostService class
