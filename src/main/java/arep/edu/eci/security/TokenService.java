@@ -25,7 +25,7 @@ public class TokenService {
                 Arrays.asList("User","Admin")
         );
         String token = Jwt.issuer("twitter-jwt")
-                .subject("twiter-jwt")
+                .subject(user.getUserName())
                 .groups(roles)
                 .expiresAt(
                         System.currentTimeMillis() + 36000
