@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  mongodatabase:
+    image: mongo:5.0.25-focal
+    container_name: mongodatabase
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - "27017:27017"
+    command: mongod
+
+volumes:
+  mongodb:
+  mongodb_config:
