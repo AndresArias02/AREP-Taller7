@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             if (response.status === 201) {
-                alert("Mensaje publicado");
                 fetchPosts(); // Cargar los posts después de publicar uno nuevo
             } else {
                 alert("Error al publicar mensaje");

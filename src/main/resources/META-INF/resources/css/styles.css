@@ -1,16 +1,187 @@
+/* Reset de márgenes y paddings para todo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y tipografía global */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
 }
 
+/* Título principal en cada página */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Formulario en todas las páginas */
 form {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-label, input, textarea, button {
-    margin: 5px 0;
+/* Efecto de transformación al pasar el ratón por encima */
+form:hover {
+    transform: scale(1.02);
+}
+
+/* Etiquetas de los formularios */
+form label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Campos de entrada de texto en los formularios */
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambiar color del borde cuando el campo está en foco */
+form input:focus,
+form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Botón de enviar en los formularios */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+form button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Enlaces de "Ya tengo cuenta" o "¿Aún no tienes cuenta?" */
+form p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+form a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes de error o información */
+#registerMessage,
+#loginMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: #ff5555; /* Rojo para errores */
+    font-size: 16px;
+}
+
+/* Sección de mensajes recientes (para la página de publicar mensaje) */
+#posts-container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+/* Estilo para cada mensaje */
+.post {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del texto de cada mensaje */
+.post p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+}
+
+/* Tiempos de publicación de los mensajes */
+.post .timestamp {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Estilo del footer (si se utiliza) */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mejora de la responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    #posts-container {
+        max-width: 100%;
+    }
 }

@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicar Mensaje</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Publicar Mensaje - EciTwitter</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Bienvenido a la Aplicación de Mensajes</h1>
-<form id="postForm">
-    <label for="message">Escribe tu mensaje:</label>
-    <textarea id="message" required></textarea>
-    <button type="submit">Publicar</button>
-</form>
-<h2>Mensajes recientes:</h2>
-<div id="posts-container"></div>
 
+<!-- Encabezado principal -->
+<header>
+    <h1>EciTwitter</h1>
+</header>
+
+<!-- Formulario para publicar mensaje -->
+<section>
+    <form id="postForm">
+        <label for="message">Escribe tu mensaje:</label>
+        <textarea id="message" required placeholder="Escribe algo..."></textarea>
+        <button type="submit">Publicar</button>
+    </form>
+</section>
+
+<!-- Sección de mensajes recientes -->
+<section>
+    <h2>Mensajes recientes:</h2>
+    <div id="posts-container"></div>
+</section>
+
+<!-- Script que contiene la lógica de la página -->
 <script src="js/home.js"></script>
+
 </body>
 </html>

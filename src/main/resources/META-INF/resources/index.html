@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management</title>
+    <title>Login EciTwitter</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>User Management System</h1>
-<nav>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-</nav>
+<h1>Login</h1>
+<form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Login</button>
+    <p>¿Aun no tienes cuenta? <a href="register.html">Registrate aquí</a>.</p>
+
+</form>
+<div id="loginMessage"></div>
+
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
+
