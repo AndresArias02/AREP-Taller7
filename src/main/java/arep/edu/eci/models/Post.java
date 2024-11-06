@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class Post extends PanacheMongoEntity {
 
     private String username;
-    private LocalDate creationDate;
+    private LocalDate creationDate = LocalDate.now();
     @Size(max = 140)
     private String content;
 
@@ -32,7 +32,6 @@ public class Post extends PanacheMongoEntity {
      */
     public Post(String username, String content) {
         this.username = username;
-        this.creationDate = LocalDate.now();
         this.content = content;
     }
 
@@ -41,17 +40,17 @@ public class Post extends PanacheMongoEntity {
      * This method returns the name of the user who created the post
      * @return the name of the user who created the post
      */
-    public String getUserName() {
+    public String getUsername() {
         return username;
     }
 
     /**
      * setUserName method
      * This method sets the name of the user who created the post
-     * @param userName the name of the user who created the post
+     * @param username the name of the user who created the post
      */
-    public void setUserName(String userName) {
-        this.username = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     /**
@@ -61,15 +60,6 @@ public class Post extends PanacheMongoEntity {
      */
     public LocalDate getCreationDate() {
         return creationDate;
-    }
-
-    /**
-     * setCreationDate method
-     * This method sets the date when the post was created
-     * @param creationDate the date when the post was created
-     */
-    public void setCreationDate(LocalDate creationDate) {
-        this.creationDate = creationDate;
     }
 
     /**
