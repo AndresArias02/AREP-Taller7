@@ -223,7 +223,7 @@ En esta imagen se muestra el registro de un usuario con los siguientes datos: an
 
 En esta imagen se muestra el registro de un usuario con los siguientes datos: David, 123456.
 
-![image02]((https://github.com/user-attachments/assets/9657def3-7336-4fca-8063-4fe6f9935fda)
+![image02](https://github.com/user-attachments/assets/9657def3-7336-4fca-8063-4fe6f9935fda)
 
 ### Logearse en el Sistema
 
@@ -247,7 +247,7 @@ En esta imagen se observa la publicacion creada por el usuario andres y la que s
 
 En esta imagen se muestra la publicación creada por el usuario David en la pantalla del usuario andres.
 
-![image07](https://github.com/user-attachments/assets/9657def3-7336-4fca-8063-4fe6f9935fda)
+![image07]()
 
 --- 
 
