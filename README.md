@@ -247,7 +247,7 @@ En esta imagen se observa la publicacion creada por el usuario andres y la que s
 
 En esta imagen se muestra la publicación creada por el usuario David en la pantalla del usuario andres.
 
-![image07]()
+![image07](https://github.com/user-attachments/assets/4124d00a-c4ce-45a9-9175-9e2be55e8146)
 
 --- 
 
